@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PingPong Score Keeper</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="app_self.css">
+</head>
+<body>
+    <section id="scoreBoard">
+        <section id="scorekeeping">
+            <img src="PingPong_img.jpg" alt="Picture of a Ping Pong paddle on a Ping Pong Table">
+
+            <h3>Ping Pong Score Keeper</h3>
+
+            <h1 id="iamh1"><span id="ply1Score">0</span> to <span id="ply2Score">0</span></h1>
+
+            <p id="status">Please, use the buttons below to keep score</p>
+
+            <h2>Playing to: <select name="setscore" id="playscore">
+                <option value="" placeholder="Choose a Score" selected></option>
+                <option value="11">11</option>
+                <option value="9">9</option>
+                <option value="6">6</option>
+            </select>
+            </h2>
+        </section>
+
+        <section id="buttons">
+            <button id="pointtoply1">+ 1 Player One</button>
+            <button id="pointtoply2">+ 1 Player Two</button>
+            <button id="reset">Reset</button>
+        </section>
+    </section>
+    <script src="app_self.js"></script>
+</body>
+</html>

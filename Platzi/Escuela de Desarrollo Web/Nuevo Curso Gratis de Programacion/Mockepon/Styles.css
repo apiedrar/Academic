@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Press+Start+2P&family=Source+Code+Pro&display=swap');
+
+html {
+    background-image: linear-gradient(#5CB8E4,#8758ff,#101010);
+    height: inherit;
+    width: auto;
+    overflow: auto;
+}
+h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Press Start 2P', cursive;
+    font-size: xxx-large;
+    font-weight: 600;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    text-shadow: 0px 10px 10px #101010;
+    color: #f5f5f5dc;
+    height: 104px;
+    margin: 45px 0px 0px 0px;
+}
+#pet-selection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h2 {
+    font-family: 'IBM Plex Mono', monospace;
+    color: #100720;
+}
+.pet-buttons {
+    display: flex;
+    flex-direction: row;
+}
+label {
+    font-family: 'Source Code Pro', monospace;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 40px;
+    color: #FFC23C;
+    background-color:  #400D51;
+    padding: 12px 68px;
+    margin: 10px 10px 10px 10px;
+    border: 0.1px solid #FFC23C;
+    cursor: pointer;
+    transition: 0.45s;
+}
+label img {
+    width: 60px;
+}
+label:hover {
+    background-color: transparent;
+    border: 0.1px solid #FFC23C;
+}
+label:active {
+    background-color: #000000;
+    box-shadow: 0 0 12px 12px #FFC23C;
+    border: 0.1px solid transparent;
+}
+input:checked+label {
+    background-color: #400d518e;
+    border: 0.1px solid transparent;
+}
+input {
+    display: none;
+}
+#player-pet-button {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: xx-large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 0px;
+    height: 26px;
+    border-radius: 32px;
+    color: #f2f2f2;
+    background-color: #101010;
+    padding: 12px 68px;
+    margin: 25px 25px 25px 25px;
+    border: 1px solid #101010;
+    cursor: pointer;
+    box-sizing: content-box;
+    transition: 0.426s;
+}
+#player-pet-button:hover {
+    box-shadow: 0 0 12px 12px #FFC23C;
+    color: #FFC23C;
+    background-color: #101010;
+    border: 1px solid transparent;
+}
+#player-pet-button:active {
+    color: #FFC23C;
+    background-color: #101010af;
+    box-shadow: 0 0 20px 20px #FFC23C;
+    border: 1px solid transparent;
+}
+#attack-selection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.attacks {
+    display: inline;
+    flex-direction: row;
+}
+#fire-button {
+    font-family: 'Source Code Pro', monospace;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 35px;
+    border-radius: 20px;
+    color: #ffb06f;
+    background-color: #ff672396;
+    margin: 0px 64px 0px 4px;
+    border: 0.5px solid #101010;
+    cursor: pointer;
+}
+#fire-button:active {
+    background-color: #ff692334;
+    border: 0.5px solid transparent;
+}
+#water-button {
+    font-family: 'Source Code Pro', monospace;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 35px;
+    border-radius: 20px;
+    color: #f2f2f2;
+    background-color: #26c9fc75;
+    margin: 0px 64px 0px 64px;
+    border: 0.5px solid #101010;
+    cursor: pointer;
+}
+#water-button:active {
+    background-color: #26cafc31;
+    border: 0.5px solid transparent;
+}
+#earth-button {
+    font-family: 'Source Code Pro', monospace;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 35px;
+    border-radius: 20px;
+    color: #2fb172;
+    background-color: #7d4526;
+    margin: 0px 4px 0px 64px;
+    border: 0.5px solid #101010;
+    cursor: pointer;
+}
+#earth-button:active {
+    background-color: #7d4426bb;
+    border: 0.5px solid transparent;
+}
+#messages {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#result {
+    align-items: center;
+    margin-top: 24px;
+    margin-bottom: 0px;
+    color: #f2f2f2;
+    font-family: 'Press Start 2P';
+    font-size: x-large;
+}
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+#restart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 8px 0px;
+}
+#restart-button {
+    font-family: 'Press Start 2P';
+    font-size: large;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 0px;
+    height: 0px;
+    border-radius: 42px;
+    color: #000000;
+    background-color: transparent;
+    margin: 12px;
+    border: transparent;
+    cursor: pointer;
+    transition: 0.422s;
+}
+#restart-button:hover {
+    box-shadow: 0 0 24px 32px #ffffff;
+    background-color: transparent;
+    border: transparent;
+}
+#restart-button:active {
+    box-shadow: 0 0 32px 40px #ffffff;
+    background-color: transparent;
+    border: transparent;
+}
+.battle-score {
+    display: grid;
+    grid-template-columns: 180px 180px;
+    text-align: center;
+}
+/*.battle-status {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}*/
+.hp-span {
+    font-family: 'Press Start 2P';
+    font-size: xxx-large;
+    /*font-weight: 600;*/
+    color: white;
+}
+.emoji {
+    font-size: xxx-large;
+}
+.match {
+    font-family: 'Source Code Pro', monospace;
+    color: #f2f2f2;
+    width: auto;
+    height: auto;
+}
+.pet-span {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 900;
+    color: #af002a;
+}
+.attacks-log {
+    font-size: xx-large;
+}
+@media (max-width: 922px) {
+    h1 {
+        font-size: xx-large;
+        letter-spacing: 0px;
+        word-spacing: 0px;
+    }
+}
+@media (max-width: 647px) {
+    #fire-button, #water-button {
+        margin: 0px 0px 8px 0px;
+    }
+    #earth-button {
+        margin: 0px 0px 0px 0px;
+    }
+}
+@media (max-width: 559px) {
+    h1 {
+        font-size: x-large;
+        letter-spacing: 0px;
+        word-spacing: 0px;
+    }
+}
+@media (max-width: 426px) {
+    h1, h2 {
+        font-size: large;
+        letter-spacing: 0px;
+        word-spacing: 0px;
+    }
+}
+@media (max-width: 400px) {
+    .pet-buttons, .attacks {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (max-width: 338px) {
+    h1, h2 {
+        font-size: medium;
+        letter-spacing: 0px;
+        word-spacing: 0px;
+    }
+}
+@media (max-width: 304px) {
+    h1, h2 {
+        font-size: small;
+        letter-spacing: 0px;
+        word-spacing: 0px;
+    }
+}
+@media (max-width: 253px) {
+    h1, h2 {
+        font-size: x-small;
+        letter-spacing: 0px;
+        word-spacing: 0px;
+    }
+}
+@media (min-height: 600px) {
+    html {
+        height: -webkit-fill-available;
+    }
+}
+/*@media (min-height: 620px) {
+    .pet-buttons, .attacks, #player-pet-button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        size: ;
+    }
+}*/

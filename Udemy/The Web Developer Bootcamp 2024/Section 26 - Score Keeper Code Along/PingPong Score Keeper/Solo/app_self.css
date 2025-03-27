@@ -1,0 +1,89 @@
+body {
+    font-family: "Roboto Mono", monospace;
+}
+
+h3 {
+    font-size: 0.8em;
+}
+
+h2 {
+    font-size: 0.8em;
+}
+
+h1 {
+    font-size: 2.25em;
+}
+
+p {
+    font-size: 0.75em;
+}
+
+img {
+    height: 400px;
+    width: 400px;
+}
+
+#scoreBoard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#scorekeeping {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0px 0px 15px 0px;
+    box-shadow: 0px 20px 20px 10px lightgray;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+    box-shadow: 0px 8px 20px 10px lightgray;
+    background-color: transparent;
+}
+
+#pointtoply1 {
+    border: none;
+    border-radius: 0.25em;
+    padding: 10px 30px;
+    color: whitesmoke;
+    background-color: #88e7d9;
+}
+
+#pointtoply1:active {
+    background-color: #3f6d66;
+}
+
+#pointtoply2 {
+    border: none;
+    border-radius: 0.25em;
+    padding: 10px 30px;
+    color: whitesmoke;
+    background-color: #96c8ea;
+}
+
+#pointtoply2:active {
+    background-color: #5d7d92;
+}
+
+#reset {
+    border: none;
+    border-radius: 0.25em;
+    padding: 10px 34px;
+    color: whitesmoke;
+    background-color: #f04667;
+}
+
+#reset:active {
+    background-color: #7e2436;
+}

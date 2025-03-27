@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>M O C K E P O N !  🔥 💧 ⛰️  </title>
+        <script src="./js/mockepon.js"></script>
+        <link rel="stylesheet" href="./Styles.css">
+    </head>
+    <body>
+        <h1>M O C K E P O N !</h1>
+        <section id="pet-selection">
+            <h2>Choose your pet:</h2>
+
+            <div class="pet-buttons">
+                <div>
+                    <input type="radio" name="pet" id="hipodoge" />
+                    <label for="hipodoge">
+                        <p>Hipodoge</p>
+                        <img src="./Assets/Hipodoge.png" alt="Hipodoge">
+                    </label>
+                    
+                    <input type="radio" name="pet" id="capipepo" />
+                    <label for="capipepo">
+                        <p>Capipepo</p>
+                        <img src="./Assets/Capipepo.png" alt="Capipepo">
+                    </label>
+                    
+                    <input type="radio" name="pet" id="ratigueya" />
+                    <label for="ratigueya">
+                        <p>Ratigueya</p>
+                        <img src="./Assets/Ratigueya.png" alt="Ratigueya">
+                    </label>
+                </div>
+                <div>
+                    <input type="radio" name="pet" id="langostelvis" />
+                    <label for="langostelvis">
+                        <p>Langostelvis</p>
+                        <img src="./Assets/Langostelvis.png" alt="Langostelvis">
+                    </label>
+
+                    <input type="radio" name="pet" id="tucapalma" />
+                    <label for="tucapalma">
+                        <p>Tucapalma</p>
+                        <img src="./Assets/Tucapalma.png" alt="Tucapalma">
+                    </label>
+
+                    <input type="radio" name="pet" id="pydos" />
+                    <label for="pydos">
+                        <p>Pydos</p>
+                        <img src="./Assets/Pydos.png" alt="Pydos">
+                    </label>
+                </div>
+            </div>
+
+            <button id="player-pet-button">Choose</button>
+
+        </section>
+        <section id="attack-selection">
+            <h2>Choose your pet's attack:</h2>
+            
+            <div class="attacks">
+                <button id="fire-button">FIRE! 🔥</button>
+                <button id="water-button">WATER! 💧</button>
+                <button id="earth-button">EARTH! ⛰️</button>
+            </div>
+
+            <div id="mensajes">
+                <p id="result">Good Luck!</p>
+
+                <section id="restart">
+                    <button id="restart-button">Play Again!</button>
+                </section>
+            </div>
+
+            <div class="battle-score">
+                <p class="battle-status"><span class="hp-span" id="player-hp">3</span><span class="emoji" id="player-emoji">💞</span><br>Your<span class="pet-span" id="player-pet"></span><b class="attacks-log" id="player-attack"></b></p>
+                <p class="battle-status"><span class="hp-span" id="opponent-hp">3</span><span class="emoji" id="opponent-emoji">💞</span><br>Opponent's<span class="pet-span" id="opponent-pet"></span><b class="attacks-log" id="opponent-attack"></b></p>
+            </div>
+
+        </section>
+    </body>
+</html>

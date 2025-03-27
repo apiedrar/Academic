@@ -1,0 +1,28 @@
+git init                            initialize repo
+git config user.name                "Name Lastname"
+git config user.email               name@example.com
+git config --list                   see your current config
+git config --list --show-origin     see where setting is defined (global, user, repo, etc)
+git mkdir                           create dir
+git cd <path>                       change dir to specified
+git cd ~                            to home dir
+git cd ..                           move up (back)
+touch <filename.extension>          create file
+ls                                  see dir content
+ls -a                               see dir content including hidden
+git add <filename>                  move files from working directory to staging area
+*.extension                         move all files with extension to staging area
+git add .                           move every file in dir to staging area
+git add -A                          move every file and FOLDERS (including hidden) from dir to staging area
+git status                          check staging area
+git rm <filename.extension>         remove specified file
+git reset HEAD --                   remove ALL from staging area
+git commit -m "insert descr"        move staging area to repository
+git log                             show commit history
+echo "dir or file(s)" >> .gitignore Enter info into .gitignore file directly from the terminal
+git checkout -b <branch_name>       create branch and switch to it in 1step
+git checkout <main or master>       switch back
+git branch -d <branch_name>         delete branch
+git push origin <branch>            make the branch available on remote repo
+
+for more, visit https://up1.github.io/git-guide/index.html or https://cs.fyi/guide/git-cheatsheets

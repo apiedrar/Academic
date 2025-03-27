@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Press+Start+2P&family=Source+Code+Pro&display=swap');
+
+html {
+    background-image: linear-gradient(#5CB8E4,#8758ff,#101010);
+    height: fit-content;
+    width: auto;
+    overflow: auto;
+}
+h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Press Start 2P', cursive;
+    font-size: -webkit-xxx-large;
+    font-weight: 600;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    text-shadow: 0px 10px 10px #101010;
+    color: #f5f5f5dc;
+    height: 104px;
+    margin: 45px 0px 0px 0px;
+}
+#pet-selection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h2 {
+    font-family: 'IBM Plex Mono', monospace;
+    color: #100720;
+}
+.pet-buttons {
+    display: flex;
+    flex-direction: row;
+}
+label {
+    font-family: 'Source Code Pro', monospace;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 40px;
+    color: #FFC23C;
+    background-color:  #400D51;
+    padding: 12px 68px;
+    margin: 10px 10px 10px 10px;
+    border: 0.1px solid #FFC23C;
+    cursor: pointer;
+}
+label img {
+    width: 60px;
+}
+label:hover {
+    background-color: transparent;
+    border: 0.1px solid #FFC23C;
+}
+label:active {
+    background-color: #000000;
+    box-shadow: 0 0 12px 12px #FFC23C;
+    border: 0.1px solid transparent;
+}
+input:checked+label {
+    background-color: #400d518e;
+    border: 0.1px solid transparent;
+}
+input {
+    display: none;
+}
+#player-pet-button {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: xx-large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 0px;
+    height: 26px;
+    border-radius: 32px;
+    color: #f2f2f2;
+    background-color: #101010;
+    padding: 12px 68px;
+    margin: 25px 25px 25px 25px;
+    border: 1px solid #101010;
+    cursor: pointer;
+    box-sizing: content-box;
+}
+#player-pet-button:hover {
+    box-shadow: 0 0 12px 12px #FFC23C;
+    color: #FFC23C;
+    background-color: #101010;
+    border: 1px solid transparent;
+}
+#player-pet-button:active {
+    color: #FFC23C;
+    background-color: #101010af;
+    box-shadow: 0 0 20px 20px #FFC23C;
+    border: 1px solid transparent;
+}
+#attack-selection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.battle-score {
+    display: flex;
+    flex-direction: row;
+}
+.battle-status {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Source Code Pro', monospace;
+    color: #f2f2f2;
+    width: 156px;
+    height: auto;
+    margin: 0px 40px;
+    margin-bottom: 128px;
+    border-radius: 52px;
+    background-color: #00000082;
+    padding: 20px;
+}
+.hp-span {
+    font-family: 'Press Start 2P';
+    font-size: -webkit-xxx-large;
+    font-weight: 900;
+    color: white;
+}
+.emoji {
+    font-size: xx-large;
+}
+.pet-span {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 900;
+    color: #af002a;
+}
+.attacks {
+    display: inline;
+    flex-direction: row;
+}
+#fire-button {
+    font-family: 'Source Code Pro', monospace;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 35px;
+    border-radius: 20px;
+    color: #ffb06f;
+    background-color: #ff672396;
+    margin: 0px 64px 0px 4px;
+    border: 0.5px solid #101010;
+    cursor: pointer;
+}
+#fire-button:active {
+    background-color: #ff692334;
+    border: 0.5px solid transparent;
+}
+#water-button {
+    font-family: 'Source Code Pro', monospace;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 35px;
+    border-radius: 20px;
+    color: #f2f2f2;
+    background-color: #26c9fc75;
+    margin: 0px 64px 0px 64px;
+    border: 0.5px solid #101010;
+    cursor: pointer;
+}
+#water-button:active {
+    background-color: #26cafc31;
+    border: 0.5px solid transparent;
+}
+#earth-button {
+    font-family: 'Source Code Pro', monospace;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 35px;
+    border-radius: 20px;
+    color: #2fb172;
+    background-color: #7d4526;
+    margin: 0px 4px 0px 64px;
+    border: 0.5px solid #101010;
+    cursor: pointer;
+}
+#earth-button:active {
+    background-color: #7d4426bb;
+    border: 0.5px solid transparent;
+}
+.battle-results {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#messages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+    color: #f2f2f2;
+    font-family: 'Press Start 2P';
+}
+#battle-log {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #f2f2f2;
+    font-family: 'Press Start 2P';
+}
+#game-progress {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #f2f2f2;
+}
+.attacks-log {
+    font-size: xxx-large;
+}
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+#restart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 8px 0px;
+}
+#restart-button {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: large;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: content-box;
+    width: 0px;
+    height: 0px;
+    border-radius: 42px;
+    color: #000000;
+    background-color: transparent;
+    margin: 12px;
+    border: transparent;
+    cursor: pointer;
+}
+#restart-button:hover {
+    box-shadow: 0 0 24px 32px #ffffff;
+    background-color: transparent;
+    border: transparent;
+}
+#restart-button:active {
+    box-shadow: 0 0 32px 40px #ffffff;
+    background-color: transparent;
+    border: transparent;
+}
+

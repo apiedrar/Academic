@@ -1,0 +1,141 @@
+html {
+    background-image: linear-gradient(#22acd6,#7d4526,#003813);
+    height: inherit;
+    width: auto;
+    overflow: auto;
+}
+h1 {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: -webkit-xxx-large;
+    font-weight: 600;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    text-shadow: 0px 10px 10px #003813;
+    color: #f5f5f5dc;
+    height: 104px;
+}
+#pet-selection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h2 {
+    font-family: monospace;
+    color: salmon;
+}
+label {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 65px;
+    margin: 10px;
+    width: 0px;
+    height: 10px;
+    color: whitesmoke;
+    border-radius: 6px;
+    background-color:  salmon;
+    cursor: pointer;
+}
+input {
+    display: none;
+}
+#player-pet-button {
+    font-family: monospace;
+    font-style: bold;
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 230px;
+    height: 35px;
+    margin: 25px auto;
+    color: whitesmoke;
+    background-color: #101010;
+    border-radius: 6px;
+    border-color: #101010;
+    cursor: pointer;
+}
+#attack-selection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.attacks {
+    display: inline-block;
+    flex-direction: row;
+}    
+#fire-button {
+    font-family: monospace;
+    margin: 15px auto;
+    color: #ffb06f;
+    background-color: #ff672396;
+    border-radius: 6px;
+    border-color: #101010;
+    width: 230px;
+    height: 35px;
+    cursor: pointer;
+}
+#water-button {
+    font-family: monospace;
+    margin: 15px auto;
+    color: whitesmoke;
+    background-color: #26c9fc75;
+    border-radius: 6px;
+    border-color: #101010;
+    width: 230px;
+    height: 35px;
+    cursor: pointer;
+}
+#earth-button {
+    font-family: monospace;
+    margin: 15px auto;
+    color: #2fb172;
+    background-color: #7d4526;
+    border-radius: 6px;
+    border-color: #101010;
+    width: 230px;
+    height: 35px;
+    cursor: pointer;
+}
+div {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+#messages {
+    font-family: monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+}
+#restart-button {
+    font-family: monospace;
+    font-style: bold;
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+    background-color: #101010;
+    border-radius: 6px;
+    border-color: #101010;
+    width: 230px;
+    height: 35px;
+    margin: 25px auto;
+    align-content: center;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+.battle-span {
+    font-family: monospace;
+    font-weight: 900;
+    color: #af002a;
+}
