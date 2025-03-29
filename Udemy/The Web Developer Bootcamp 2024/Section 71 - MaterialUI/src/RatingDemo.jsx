@@ -1,4 +1,4 @@
-import Rating from "@mui/material/rating";
+import Rating from "@mui/material/Rating";
 import { useState } from "react";
 export default function RatingDemo() {
   const [score, setScore] = useState(3);
