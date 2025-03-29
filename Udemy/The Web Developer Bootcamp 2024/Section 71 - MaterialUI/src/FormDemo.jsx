@@ -26,8 +26,8 @@ export default function FormDemo() {
       <h1>Name is: {name}</h1>
       <TextField
         id="outlined-basic"
-        placeholder="Fido"
-        label="Puppy Name"
+        placeholder="Firulais"
+        label="Doggy Name"
         variant="outlined"
         value={name}
         onChange={updateName}
