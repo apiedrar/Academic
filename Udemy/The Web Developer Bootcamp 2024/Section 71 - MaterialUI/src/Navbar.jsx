@@ -21,9 +21,9 @@ export default function Navbar() {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            News
+            Whatzitooya
           </Typography>
-          <Button color="inherit">Login</Button>
+          <Button color="inherit">Getouttahere</Button>
         </Toolbar>
       </AppBar>
     </Box>
